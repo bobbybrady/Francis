@@ -1,0 +1,94 @@
+*{margin:0;padding: 0;}
+body, html {
+  background-color: #d1ffe2;
+    height: 100%;
+}
+
+.mainimg {
+    background-image: url("1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .scroll-pin-spacer {
+    padding: 0;
+  }
+
+  #container {
+    height: 0;
+  }
+
+  /* .mainimg2 {
+    width: 100%;
+    height: 100%;
+    background: url("2.jpg")no-repeat;
+    background-size: cover;
+    
+  } */
+
+  #dog {
+    color: lightcoral;
+    -webkit-text-stroke: 3px black;
+    margin: 60vh 0 0 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-size: 200px;
+    font-family: 'Lacquer', sans-serif;
+  }
+
+  #dog1 {
+    color: lightblue;
+    z-index: 3;
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -50px;
+    -webkit-text-stroke: 1.5px black;
+    font-family: 'Beth Ellen', cursive; 
+  }
+
+  #reveal1 {
+    visibility: hidden;
+    /* transform: scale(.5); */
+    transition: all 1s ease-in-out;
+  }
+
+  #reveal1.visible {
+    visibility: visible;
+    /* transform: scale(5); */
+  }
+
+  #container1 {
+    background-color: antiquewhite;
+    height: 100%;
+  }
+
+  #container2 {
+    height: 100%;
+    
+  }
+
+  .instagram-contain {
+    height: 500px;
+    width: 320px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 50px auto;
+  }
+
+ .image2 {
+   border: 1px solid black;
+   
+ }
+
+ .smaller{
+   transform: scale(.5);
+ }
+  
