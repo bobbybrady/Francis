@@ -105,8 +105,8 @@ body, html {
   }
 
   #container2 {
-    height: 100%;
-    
+    height: 250%;
+    margin-bottom: 75px;
   }
 
   .instagram-contain {
@@ -137,6 +137,7 @@ body, html {
    transform: scale(.5);
    transition-duration: 2s;
    position: relative;
+   border-radius: 25px;
 
  }
   
@@ -144,4 +145,9 @@ body, html {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+.butterfly{
+  display: block;
+  margin: 0 auto;
 }

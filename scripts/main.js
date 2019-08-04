@@ -82,7 +82,19 @@ var wipeAnimation = new TimelineMax()
     })
     .setPin("#pinContainer")
     .setTween(wipeAnimation)
-    .addIndicators() // add indicators (requires plugin)
+    // .addIndicators() // add indicators (requires plugin)
     .addTo(controller)
 
+
+new ScrollMagic.Scene({
+    triggerElement: '#container2',
+    triggerHook: .99,
+    offset:2100,
+    duration: 1500
+})
+    .setPin("#pin", {
+        pushFollowers: false
+    })
+    .addIndicators()
+    .addTo(controller);
 
