@@ -2,6 +2,7 @@
 body, html {
   background-color: #d1ffe2;
     height: 100%;
+    width: 100%;
 }
 
 .mainimg {
@@ -23,13 +24,49 @@ body, html {
     height: 0;
   }
 
-  /* .mainimg2 {
+  .mainimg2 {
     width: 100%;
     height: 100%;
     background: url("2.jpg")no-repeat;
     background-size: cover;
+    position: absolute;
     
-  } */
+  }
+
+  .mainimg3 {
+    width: 100%;
+    height: 100%;
+    background: url("3.jpg")no-repeat;
+    background-size: cover;
+    position: absolute;
+    
+  }
+  .mainimg4 {
+    width: 100%;
+    height: 100%;
+    background: url("6.jpg")no-repeat;
+    background-size: cover;
+    position: absolute;
+    
+  }
+  .mainimg5 {
+    width: 100%;
+    height: 100%;
+    background: url("5.jpg")no-repeat;
+    background-size: cover;
+    position: absolute;
+    
+  }
+
+  .mainimg6 {
+    width: 100%;
+    height: 100%;
+    background: url("7.jpg")no-repeat;
+    background-size: cover;
+    position: absolute;
+    
+  }
+  
 
   #dog {
     color: lightcoral;
@@ -55,13 +92,11 @@ body, html {
 
   #reveal1 {
     visibility: hidden;
-    /* transform: scale(.5); */
     transition: all 1s ease-in-out;
   }
 
   #reveal1.visible {
     visibility: visible;
-    /* transform: scale(5); */
   }
 
   #container1 {
@@ -81,14 +116,32 @@ body, html {
     border: 2px solid black;
     border-radius: 25px;
     margin: 50px auto;
+    /* position: absolute; */
+    z-index: 3;
   }
 
- .image2 {
-   border: 1px solid black;
-   
- }
+
 
  .smaller{
+   transform: scale(.1);
+   opacity: 0;
+   margin-left: 300px;
+   margin-top: -100px;
+   z-index: 1;
+   transition-duration: 2s;
+   position: relative;
+ }
+
+ .smaller2 {
+   opacity: 1;
    transform: scale(.5);
+   transition-duration: 2s;
+   position: relative;
+
  }
   
+ #pinContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
