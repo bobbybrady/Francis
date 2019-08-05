@@ -24,16 +24,7 @@ new ScrollMagic.Scene({
 
 
 
-// new ScrollMagic.Scene({
-//     triggerElement: "#trigger2",
-//     triggerHook: 0.1, // show, when scrolled 10% into view
-//     duration: "50%", // hide 10% before exiting view (80% + 10% from bottom)
-//     offset: 50 // move trigger to center of element
-// })
 
-//     .setClassToggle("#reveal2", "fish")
-//     .addIndicators()
-//     .addTo(controller);
 
 var tween = TweenMax.to("#reveal2", 1, { rotation: 360, ease: Linear.easeNone });
 var tween2 = TweenMax.to("#reveal2", 1, { left: 650 });
@@ -53,7 +44,6 @@ new ScrollMagic.Scene({ triggerElement: "#trigger2", offset: 400, duration: 200 
 
 
 new ScrollMagic.Scene({ triggerElement: "#trigger2", offset: 750, duration: 700 })
-    // .setPin("#reveal2")
     .setTween(tween3)
     .setClassToggle("#smaller", "smaller2")
     // .addIndicators() // add indicators (requires plugin)
@@ -62,7 +52,6 @@ new ScrollMagic.Scene({ triggerElement: "#trigger2", offset: 750, duration: 700 
 var tween3 = TweenMax.to("#smaller", 1, { right: 400 });
 
 new ScrollMagic.Scene({ triggerElement: "#trigger2", offset: 800, duration: 300 })
-    // .setPin("#reveal2")
     .setTween(tween3)
     // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
@@ -95,6 +84,15 @@ new ScrollMagic.Scene({
     .setPin("#pin", {
         pushFollowers: false
     })
-    .addIndicators()
-    .addTo(controller);
+    // .addIndicators()
+    .addTo(controller)
 
+    new ScrollMagic.Scene({
+        triggerElement: '#container2',
+        triggerHook: .5,
+        offset:5900,
+        duration: 500
+    })
+    .setClassToggle("#reveal3", "appear")
+    .addIndicators()
+    .addTo(controller)

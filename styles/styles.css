@@ -1,6 +1,7 @@
 *{margin:0;padding: 0;}
 body, html {
-  background-color: #d1ffe2;
+  /* background-color: #d1ffe2; */
+  background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0511/2099/rrfrench_bulldog_mint_shop_preview.jpg");
     height: 100%;
     width: 100%;
 }
@@ -30,6 +31,7 @@ body, html {
     background: url("2.jpg")no-repeat;
     background-size: cover;
     position: absolute;
+    /* z-index: 3; */
     
   }
 
@@ -39,7 +41,7 @@ body, html {
     background: url("3.jpg")no-repeat;
     background-size: cover;
     position: absolute;
-    
+    /* z-index: 3; */
   }
   .mainimg4 {
     width: 100%;
@@ -47,7 +49,7 @@ body, html {
     background: url("6.jpg")no-repeat;
     background-size: cover;
     position: absolute;
-    
+    /* z-index: 3; */
   }
   .mainimg5 {
     width: 100%;
@@ -55,7 +57,7 @@ body, html {
     background: url("5.jpg")no-repeat;
     background-size: cover;
     position: absolute;
-    
+    /* z-index: 3; */
   }
 
   .mainimg6 {
@@ -64,11 +66,25 @@ body, html {
     background: url("7.jpg")no-repeat;
     background-size: cover;
     position: absolute;
-    
+    /* z-index: 3; */
   }
-  
 
-  #dog {
+ #reveal3 {
+   /* opacity: 0; */
+   transform: scale(.1);
+   /* transition-duration: 3s; */
+   position: relative;
+   
+ }
+
+ .appear {
+   /* opacity: 1; */
+   transform: scale(2);
+   /* transition-duration: 3s; */
+   position: relative;
+ }
+
+  .francis {
     color: lightcoral;
     -webkit-text-stroke: 3px black;
     margin: 60vh 0 0 0;
@@ -79,7 +95,7 @@ body, html {
     font-family: 'Lacquer', sans-serif;
   }
 
-  #dog1 {
+  .fb {
     color: lightblue;
     z-index: 3;
     position: relative;
@@ -116,8 +132,8 @@ body, html {
     border: 2px solid black;
     border-radius: 25px;
     margin: 50px auto;
-    /* position: absolute; */
     z-index: 3;
+    box-shadow: 10px 10px 5px gray;
   }
 
 
@@ -130,6 +146,7 @@ body, html {
    z-index: 1;
    transition-duration: 2s;
    position: relative;
+   box-shadow: 10px 10px 5px gray;
  }
 
  .smaller2 {
@@ -138,6 +155,7 @@ body, html {
    transition-duration: 2s;
    position: relative;
    border-radius: 25px;
+   box-shadow: 10px 10px 5px gray;
 
  }
   
@@ -149,5 +167,17 @@ body, html {
 
 .butterfly{
   display: block;
+  margin: 25px auto;
+  /* box-shadow: 10px 10px 5px gray; */
+  /* border-radius: 25px; */
+}
+
+.pin {
+  height: 774px;
+  width: 1136px;
+  display: block;
   margin: 0 auto;
+  border: 1px solid white;
+  background-color: white;
+  box-shadow: 10px 10px 5px gray;
 }
